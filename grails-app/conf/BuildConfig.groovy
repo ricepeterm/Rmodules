@@ -49,9 +49,10 @@ grails.project.dependency.resolution = {
     repositories {
         // grailsPlugins()
         // grailsHome()
+        mavenRepo "file://${System.getProperty('user.home')}/m2local/etriksv3"
+        mavenLocal()
         grailsCentral()
 
-        mavenLocal()
         mavenCentral()
         mavenRepo 'https://repo.transmartfoundation.org/content/repositories/public/'
     }
